@@ -6,7 +6,6 @@
 
 > Install the USBIP tools and hardware database in Kali-Linux(02/08/2022)
 
-from
 ```python
 ~/root💀junior# apt install linux-tools-5.4.0-77-generic hwdata
 ~/root💀junior# update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20
