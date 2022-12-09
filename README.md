@@ -89,3 +89,21 @@ npm config set legacy-peer-deps true
 npm install --save --legacy-peer-deps
 ```
 ----
+> how to slove ```Uncaught ReferenceError: process is not defined``` Error 
+
+```json
+Uncaught ReferenceError: process is not defined
+at Object.4043 (<anonymous>:2:13168)
+at r (<anonymous>:2:306599)
+at Object.8048 (<anonymous>:2:9496)
+at r (<anonymous>:2:306599)
+at Object.8641 (<anonymous>:2:1379)
+at r (<anonymous>:2:306599)
+at <anonymous>:2:315627
+at <anonymous>:2:324225
+at <anonymous>:2:324229
+at HTMLIFrameElement.e.onload (index.js:1)
+```
+
+You might have started facing this problem either after updating your CRA or starting a new project using create-react-app which lead to the probable lead cause of it to be react-error-overlay.
+TRY ```npm i -D react-error-overlay@6.0.9````
