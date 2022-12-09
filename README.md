@@ -46,10 +46,9 @@ And that’s it! Now the container should be running and we can open https://loc
 > How to fix situation Error ERESOLVE could not resolve [duplicate](09/10/2022)
 ==npm install==
 
-After running npm install I'm getting this error:
+After running ```python npm install ``` I'm getting this error:
 
 ```json
-{
   npm ERR! code ERESOLVE
   npm ERR! ERESOLVE could not resolve
   npm ERR! 
@@ -81,7 +80,6 @@ After running npm install I'm getting this error:
 
   npm ERR! A complete log of this run can be found in:
   npm ERR!     /home/salami/.npm/_logs/2021-09-25T09_49_52_657Z-debug.log
-}
 ```
 
 So you can try this
