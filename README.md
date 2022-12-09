@@ -41,10 +41,7 @@ After that
 And that’s it! Now the container should be running and we can open https://localhost:8834/ and activate our new shiny Nessus instance.
 
 ----
-
-----
 > How to fix situation Error ERESOLVE could not resolve [duplicate](09/10/2022)
-==npm install==
 
 After running ```npm install``` I'm getting this error:
 
