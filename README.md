@@ -42,10 +42,13 @@ And that’s it! Now the container should be running and we can open https://loc
 
 ----
 > How to fix situation Error ERESOLVE could not resolve [duplicate](09/10/2022)
-<span style="color: red;">text</span>
+<style>
+red { color: red }
+yellow { color: yellow }
+</style>
 
 
-After running <span style="color:blue">npm install</style>  I'm getting this error:
+After running <red>npm install</red> I'm getting this error:
 
 npm ERR! code ERESOLVE
 npm ERR! ERESOLVE could not resolve
