@@ -46,7 +46,7 @@ And that’s it! Now the container should be running and we can open https://loc
 > How to fix situation Error ERESOLVE could not resolve [duplicate](09/10/2022)
 ==npm install==
 
-After running ```python npm install ``` I'm getting this error:
+After running ```npm install ``` I'm getting this error:
 
 ```json
   npm ERR! code ERESOLVE
