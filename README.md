@@ -46,39 +46,43 @@ And that’s it! Now the container should be running and we can open https://loc
 > How to fix situation Error ERESOLVE could not resolve [duplicate](09/10/2022)
 ==npm install==
 
-After running ==npm install==  I'm getting this error:
+After running npm install I'm getting this error:
 
-npm ERR! code ERESOLVE
-npm ERR! ERESOLVE could not resolve
-npm ERR! 
-npm ERR! While resolving: client@0.0.0
-npm ERR! Found: @angular/compiler@11.0.9
-npm ERR! node_modules/@angular/compiler
-npm ERR!   @angular/compiler@"^11.0.7" from the root project
-npm ERR!   peer @angular/compiler@"11.0.9" from @angular/compiler-cli@11.0.9
-npm ERR!   node_modules/@angular/compiler-cli
-npm ERR!     dev @angular/compiler-cli@"~11.0.7" from the root project
-npm ERR!     peer @angular/compiler-cli@"^11.0.0" from @angular-devkit/build-angular@0.1100.7
-npm ERR!     node_modules/@angular-devkit/build-angular
-npm ERR!       dev @angular-devkit/build-angular@"^0.1100.6" from the root project
-npm ERR! 
-npm ERR! Could not resolve dependency:
-npm ERR! @angular/platform-browser-dynamic@"^11.0.7" from the root project
-npm ERR! 
-npm ERR! Conflicting peer dependency: @angular/compiler@11.2.14
-npm ERR! node_modules/@angular/compiler
-npm ERR!   peer @angular/compiler@"11.2.14" from @angular/platform-browser-dynamic@11.2.14
-npm ERR!   node_modules/@angular/platform-browser-dynamic
-npm ERR!     @angular/platform-browser-dynamic@"^11.0.7" from the root project
-npm ERR! 
-npm ERR! Fix the upstream dependency conflict, or retry
-npm ERR! this command with --force, or --legacy-peer-deps
-npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
-npm ERR! 
-npm ERR! See /home/salami/.npm/eresolve-report.txt for a full report.
+```json
+{
+  npm ERR! code ERESOLVE
+  npm ERR! ERESOLVE could not resolve
+  npm ERR! 
+  npm ERR! While resolving: client@0.0.0
+  npm ERR! Found: @angular/compiler@11.0.9
+  npm ERR! node_modules/@angular/compiler
+  npm ERR!   @angular/compiler@"^11.0.7" from the root project
+  npm ERR!   peer @angular/compiler@"11.0.9" from @angular/compiler-cli@11.0.9
+  npm ERR!   node_modules/@angular/compiler-cli
+  npm ERR!     dev @angular/compiler-cli@"~11.0.7" from the root project
+  npm ERR!     peer @angular/compiler-cli@"^11.0.0" from @angular-devkit/build-angular@0.1100.7
+  npm ERR!     node_modules/@angular-devkit/build-angular
+  npm ERR!       dev @angular-devkit/build-angular@"^0.1100.6" from the root project
+  npm ERR! 
+  npm ERR! Could not resolve dependency:
+  npm ERR! @angular/platform-browser-dynamic@"^11.0.7" from the root project
+  npm ERR! 
+  npm ERR! Conflicting peer dependency: @angular/compiler@11.2.14
+  npm ERR! node_modules/@angular/compiler
+  npm ERR!   peer @angular/compiler@"11.2.14" from @angular/platform-browser-dynamic@11.2.14
+  npm ERR!   node_modules/@angular/platform-browser-dynamic
+  npm ERR!     @angular/platform-browser-dynamic@"^11.0.7" from the root project
+  npm ERR! 
+  npm ERR! Fix the upstream dependency conflict, or retry
+  npm ERR! this command with --force, or --legacy-peer-deps
+  npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+  npm ERR! 
+  npm ERR! See /home/salami/.npm/eresolve-report.txt for a full report.
 
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/salami/.npm/_logs/2021-09-25T09_49_52_657Z-debug.log
+  npm ERR! A complete log of this run can be found in:
+  npm ERR!     /home/salami/.npm/_logs/2021-09-25T09_49_52_657Z-debug.log
+}
+```
 
 So you can try this
 
@@ -90,4 +94,3 @@ npm config set legacy-peer-deps true
 npm install --save --legacy-peer-deps
 ```
 ----
-I need to highlight these ==very important words==.
