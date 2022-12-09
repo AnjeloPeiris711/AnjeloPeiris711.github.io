@@ -42,9 +42,7 @@ And that’s it! Now the container should be running and we can open https://loc
 
 ----
 > How to fix situation Error ERESOLVE could not resolve [duplicate](09/10/2022)
-<span style="color:red">
-Text_content
-</style>
+<span style="color: red;">text</span>
 
 
 After running <span style="color:blue">npm install</style>  I'm getting this error:
