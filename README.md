@@ -106,4 +106,6 @@ at HTMLIFrameElement.e.onload (index.js:1)
 ```
 
 You might have started facing this problem either after updating your CRA or starting a new project using create-react-app which lead to the probable lead cause of it to be react-error-overlay.
-TRY ```npm i -D react-error-overlay@6.0.9````
+
+TRY thiis ```npm i -D react-error-overlay@6.0.9````
+----
