@@ -110,3 +110,28 @@ You might have started facing this problem either after updating your CRA or sta
 So try this ```npm i -D react-error-overlay@6.0.9```
 
 ----
+>What the hell is this saying? ```Access to fetch at from origin 'http://localhost:3000' has been blocked by CORS policy```
+
+I don't have a deep understanding of this but the reason to face this issue is because of making "API" requests with the same domain name.So i enable CORS in flask
+
+``` pip install -U flask-cors ```
+```python
+from flask import Flask, render_template, url_for, request
+from flask_cors import CORS, cross_origin
+app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+@app.route("/members",methods=["GET"])
+@cross_origin()
+def members():
+    return{
+        "members":[
+            "Member1",
+            "Member2",
+            "Member3"
+        ]
+    }
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+----
