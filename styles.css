@@ -8,7 +8,7 @@ body {
 header {
   text-align: center;
   padding: 50px;
-  background-color: #333;
+  background-color: #3c3c3c;
   color: white;
 }
 
@@ -54,4 +54,23 @@ footer {
 
 .project a:hover {
   text-decoration: underline;
+}
+
+/* About Section Styling */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-content p {
+  flex: 1;
+}
+
+.about-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-left: 20px;
+  border-radius: 50%; /* Optional: Makes the image circular */
 }
